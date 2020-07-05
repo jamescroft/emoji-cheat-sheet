@@ -1,7 +1,28 @@
 /* main.css */
 
-.main {
-    margin: 30px auto;
+/* Light mode */
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;
+    }
+}
+
+/* Dark mode */
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+ul.emoji-list {
+    text-align: center;
+}
+
+li.emoji-item {
+    list-style-type: none;
+    display: block;
 }
 
 .emoji-symbol {

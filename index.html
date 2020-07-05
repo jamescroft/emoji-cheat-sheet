@@ -15,17 +15,22 @@
 </head>
 
 <body onload="renderEmoji()">
-    <div class="container main">
-        <h1>Emoji cheat sheet</h1>
+    <div class="container main my-3">
+        <form class="form-inline float-right">
+            <input class="form-control mr-sm-2 search" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <h1>Emoji cheat sheet <a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank"
+                class="badge badge-light">V13.0</a> </h1>
         <div id="target">Loading...</div>
         <script id="template" type="x-tmpl-mustache">
-          <div class="row">
-              {{#emojis}}
-              <div class="col-4 col-md-2 col-lg-1 text-center">
-                  <div class="emoji-symbol">{{emoji}}</div>
-                  <div class="emoji-description"><small>{{description}}</small></div>
-                </div>
-              {{/emojis}}
+            <div class="row emoji-list">
+                {{#emojis}}
+                <div class="col-4 col-md-2 col-lg-1 emoji-item">
+                        <div class="emoji-symbol">{{emoji}}</div>
+                        <div class="emoji-description"><small>{{description}}</small></div>
+                    </div>
+                {{/emojis}}
           </div>
         </script>
     </div>
@@ -43,6 +48,9 @@
         integrity="sha512-6AXIWogbKpsHvoZJrJtHpIYES4wP8czSj0zk7ZfwOYS8GWYFNSykwdfapt7yQc4ikZytemBu+QyVObzBHJMwYg=="
         crossorigin="anonymous"></script>
     <script src="js/render.js"></script>
+    <!-- List.js-->
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
