@@ -9,17 +9,24 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <title>Hello, emoji cheat sheet!</title>
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Emoji cheat sheet</title>
 </head>
 
 <body onload="renderEmoji()">
-    <div class="container">
-        <h1>Hello, emoji cheat sheet!</h1>
+    <div class="container main">
+        <h1>Emoji cheat sheet</h1>
         <div id="target">Loading...</div>
         <script id="template" type="x-tmpl-mustache">
-          {{#emojis}}
-            <p>{{emoji}}&nbsp; - {{description}}</p>
-          {{/emojis}}
+          <div class="row">
+              {{#emojis}}
+              <div class="col-4 col-md-2 col-lg-1 text-center">
+                  <div class="emoji-symbol">{{emoji}}</div>
+                  <div class="emoji-description"><small>{{description}}</small></div>
+                </div>
+              {{/emojis}}
+          </div>
         </script>
     </div>
     <!-- Optional JavaScript -->

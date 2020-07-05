@@ -1,0 +1,13 @@
+/* main.css */
+
+.main {
+    margin: 30px auto;
+}
+
+.emoji-symbol {
+ font-size: 3rem;
+}
+.emoji-description {
+    line-height: 0.70rem;
+    font-size:0.76rem;
+}
