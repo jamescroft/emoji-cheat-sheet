@@ -34,6 +34,10 @@ body {
     margin-top:50px;
 }
 
+.navbar-nav {
+    flex-direction: row;
+}
+
 .emoji-list {
     text-align: center;
 }
