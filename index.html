@@ -14,37 +14,50 @@
     <title>Emoji cheat sheet</title>
 </head>
 
-<body onload="renderEmoji()">
+<body onload="renderEmoji()" data-spy="scroll" data-target="#navbar" data-offset="50">
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav id="navbar" class="navbar navbar-expand-md navbar-light bg-light fixed-top">
         <div class="container">
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#">Emoji cheat sheet</a>
-    
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <div class="navbar-nav mr-auto mt-2 mt-lg-0">
-          </div>
-          <form class="form-inline my-2 my-lg-0">
-            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-          </form>
+            <a class="navbar-brand" href="#">Emoji Cheat Sheet</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#smileys-&-emotion" title="Smileys & Emotion">😀</a>
+                    <a class="nav-item nav-link" href="#people-&-body" title="People & Body">👫</a>
+                    <a class="nav-item nav-link" href="#animals-&-nature" title="Animals & Nature">🐻</a>
+                    <a class="nav-item nav-link" href="#food-&-drink" title="Food & Drink">🍔</a>
+                    <a class="nav-item nav-link" href="#travel-&-places" title="Travel & Places">🚗</a>
+                    <a class="nav-item nav-link" href="#activities" title="Activities">⚽</a>
+                    <a class="nav-item nav-link" href="#objects" title="Objects">💡</a>
+                    <a class="nav-item nav-link" href="#symbols" title="Symbols">🆗</a>
+                    <a class="nav-item nav-link" href="#flags" title="Flags">🚩</a>
+                </div>
+            </div>
         </div>
+    </nav>
+
+    <div class="container main my-3" data-spy="scroll" data-target="#navbar" data-offset="50">
+        <div class="filter-buttons">
+            <button type="button" class="btn btn-primary btn-sm">Apple</button>
+            <button type="button" class="btn btn-secondary btn-sm">Google</button>
+        </div>
+        <div id="target"></div>
+
     </div>
-      </nav>
-    <div class="container main my-3">
-        <div id="target">Loading...</div>
-        <script id="template" type="x-tmpl-mustache">
-            <div class="row emoji-list">
-                {{#emojis}}
+    <script id="body-template" type="x-tmpl-mustache">
+        <div class="row emoji-list">
+            {{#.}}
                 <div class="col-4 col-md-2 col-lg-1 emoji-item">
-                        <div class="emoji-symbol">{{emoji}}</div>
-                        <div class="emoji-description"><small>{{description}}</small></div>
-                    </div>
-                {{/emojis}}
-          </div>
-        </script>
+                    <div class="emoji-symbol">{{emoji}}</div>
+                    <div class="emoji-description"><small>{{description}}</small></div>
+                </div>
+            {{/.}}
+        </div>
+    </script>
+
     </div>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -63,6 +76,7 @@
     <!-- List.js-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script src="js/main.js"></script>
+
 </body>
 
 </html>

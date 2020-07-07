@@ -1,8 +1,22 @@
 /* main.css */
 
+body {
+    position: relative;
+  }
+
+/* navbar fixed-top scroll offset */
+
+  *[id]:before { 
+    display: block; 
+    content: " "; 
+    margin-top: -75px; 
+    height: 75px; 
+    visibility: hidden; 
+  }
+
 /* Light mode */
 @media (prefers-color-scheme: light) {
-    body {
+    nav, body {
         background-color: white;
         color: black;
     }
@@ -10,17 +24,21 @@
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    body {
+    nav, body {
         background-color: black;
         color: white;
     }
 }
 
-ul.emoji-list {
+.main {
+    margin-top:50px;
+}
+
+.emoji-list {
     text-align: center;
 }
 
-li.emoji-item {
+.emoji-item {
     list-style-type: none;
     display: block;
 }
