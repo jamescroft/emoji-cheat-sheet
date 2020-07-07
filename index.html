@@ -15,55 +15,54 @@
 </head>
 
 <body onload="renderEmoji()" data-spy="scroll" data-target="#navbar" data-offset="50">
-    
-        <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
-            <div class="container">
+    <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
+        <div class="container">
             <a class="navbar-brand d-none d-sm-block" href="#">Emoji Cheat Sheet</a>
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item px-1">
+                <li class="nav-item px-2">
                     <a class="nav-link" href="#smileys-&-emotion" title="Smileys & Emotion">😀</a>
                 </li>
-                <li class="nav-item px-1">
+                <li class="nav-item px-2">
                     <a class="nav-link" href="#people-&-body" title="People & Body">👫</a>
                 </li>
-                <li class="nav-item px-1">
+                <li class="nav-item px-2">
                     <a class="nav-link" href="#animals-&-nature" title="Animals & Nature">🐻</a>
                 </li>
-                <li class="nav-item px-1">
+                <li class="nav-item px-2">
                     <a class="nav-link" href="#food-&-drink" title="Food & Drink">🍔</a>
                 </li>
-                <li class="nav-item px-1">
+                <li class="nav-item px-2">
                     <a class="nav-link" href="#travel-&-places" title="Travel & Places">🚗</a>
                 </li>
-                <li class="nav-item px-1">
+                <li class="nav-item px-2">
                     <a class="nav-link" href="#activities" title="Activities">⚽</a>
                 </li>
-                <li class="nav-item px-1">
+                <li class="nav-item px-2">
                     <a class="nav-link" href="#objects" title="Objects">💡</a>
                 </li>
-                <li class="nav-item px-1">
+                <li class="nav-item px-2">
                     <a class="nav-link" href="#symbols" title="Symbols">🆗</a>
                 </li>
-                <li class="nav-item px-1">
+                <li class="nav-item px-2">
                     <a class="nav-link" href="#flags" title="Flags">🚩</a>
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
                 <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
             </form>
         </div>
-        </nav>
-    
+    </nav>
 
     <div class="container main my-3" data-spy="scroll" data-target="#navbar" data-offset="50">
         <div class="filter-buttons">
             <button type="button" class="btn btn-primary btn-sm">Apple</button>
             <button type="button" class="btn btn-secondary btn-sm">Google</button>
         </div>
+
         <div id="target"></div>
 
     </div>
+
     <script id="body-template" type="x-tmpl-mustache">
         <div class="row emoji-list">
             {{#.}}
@@ -93,7 +92,6 @@
     <!-- List.js-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script src="js/main.js"></script>
-
 </body>
 
 </html>
