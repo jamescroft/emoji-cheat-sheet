@@ -47,6 +47,12 @@ body {
     padding-right:0.30rem!important;
 }
 
+.navbar-toggler {
+    border: none;
+    padding: 0;
+
+}
+
 ul.emoji-list {
     text-align: center;
     padding-left:0;
