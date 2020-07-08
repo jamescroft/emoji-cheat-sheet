@@ -49,6 +49,7 @@ body {
 
 ul.emoji-list {
     text-align: center;
+    padding-left:0;
 }
 
 li.emoji-item {
