@@ -48,9 +48,8 @@ body {
 }
 
 .navbar-toggler {
-    border: none;
+    border: hidden;
     padding: 0;
-
 }
 
 ul.emoji-list {
