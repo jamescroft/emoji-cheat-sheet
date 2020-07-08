@@ -47,11 +47,18 @@
                     <a class="nav-link" href="#flags" title="Flags">🚩</a>
                 </li>
             </ul>
-            <a class="nav-link d-sm-none px-0" href="#" title="Search">🔍</a>
-            <form class="form-inline my-2 my-lg-0">
-                <input id="search-field" class="form-control mr-sm-2 d-none d-sm-block" type="search"
-                    placeholder="Search" aria-label="Search">
-            </form>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="nav-link d-sm-none px-0" href="#" title="Search">🔍</a>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto">
+                    <form class="form-inline my-2 my-lg-0">
+                        <input id="search-field" class="form-control mr-sm-2" type="search" placeholder="Search"
+                            aria-label="Search">
+                    </form>
+            </div>
+
         </div>
     </nav>
 
