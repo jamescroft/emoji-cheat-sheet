@@ -47,31 +47,28 @@
                     <a class="nav-link" href="#flags" title="Flags">🚩</a>
                 </li>
             </ul>
-            <form class="form-inline my-2 my-lg-0 d-none d-sm-block">
-                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <a class="nav-link d-sm-none" href="#" title="Search">🔍</a>
+            <form class="form-inline my-2 my-lg-0">
+                <input id="search-field" class="form-control mr-sm-2 d-none d-sm-block" type="search"
+                    placeholder="Search" aria-label="Search">
             </form>
         </div>
     </nav>
 
-    <div class="container main my-3" data-spy="scroll" data-target="#navbar" data-offset="50">
-        <div class="filter-buttons">
-            <button type="button" class="btn btn-primary btn-sm">Apple</button>
-            <button type="button" class="btn btn-secondary btn-sm">Google</button>
+    <div id="emoji" class="container main my-3" data-spy="scroll" data-target="#navbar" data-offset="50">
+        <div class="row">
+            <ul id="target" class="emoji-list list"></ul>
         </div>
-
-        <div id="target"></div>
 
     </div>
 
     <script id="body-template" type="x-tmpl-mustache">
-        <div class="row emoji-list">
-            {{#.}}
-                <div class="col-4 col-md-2 col-lg-1 emoji-item">
+        {{#.}}
+                <li class="col-4 col-md-2 col-lg-1 emoji-item">
                     <div class="emoji-symbol">{{emoji}}</div>
                     <div class="emoji-description"><small>{{description}}</small></div>
-                </div>
+                </li>
             {{/.}}
-        </div>
     </script>
 
     </div>
@@ -88,10 +85,13 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/4.0.1/mustache.min.js"
         integrity="sha512-6AXIWogbKpsHvoZJrJtHpIYES4wP8czSj0zk7ZfwOYS8GWYFNSykwdfapt7yQc4ikZytemBu+QyVObzBHJMwYg=="
         crossorigin="anonymous"></script>
-    <script src="js/render.js"></script>
+
     <!-- List.js-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script src="js/main.js"></script>
+    <script src="js/render.js"></script>
+
+
 </body>
 
 </html>

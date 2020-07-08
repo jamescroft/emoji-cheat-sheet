@@ -31,8 +31,10 @@ body {
 }
 
 .main {
-    margin-top:50px;
+    padding-top:75px;
 }
+
+/*Navbar */
 
 .navbar-nav {
     flex-direction: row!important;
@@ -45,13 +47,15 @@ body {
     padding-right:0.35rem!important;
 }
 
-.emoji-list {
+ul.emoji-list {
     text-align: center;
 }
 
-.emoji-item {
+li.emoji-item {
     list-style-type: none;
-    display: block;
+    display: inline-block;
+    line-height: 100px;
+    vertical-align:top;
 }
 
 .emoji-symbol {
