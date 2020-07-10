@@ -32,7 +32,7 @@ function renderEmoji() {
     }
     // initialise list.js
     var options = {
-      valueNames: ['emoji-symbol', 'emoji-description']
+      valueNames: ['emoji-symbol', 'emoji-description', 'emoji-tags']
     };
     var emojiList = new List('emoji', options);
 

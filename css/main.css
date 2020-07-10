@@ -102,6 +102,10 @@ li.emoji-item {
     font-size:0.76rem;
 }
 
+.emoji-tags {
+    display:none;
+}
+
 .oi.oi-magnifying-glass {
     top:4px;
 }
