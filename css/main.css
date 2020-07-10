@@ -75,6 +75,10 @@ body {
     opacity: 1;
 }
 
+.btn {
+    padding: 0;
+}
+
 .nav-search-link {
     margin-left: 0.4rem;
 }
