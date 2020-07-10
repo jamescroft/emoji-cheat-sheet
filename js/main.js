@@ -7,6 +7,3 @@ $('.navbar-toggler a.search-link').on('click', function () {
     $('#search-field').focus()
 });
 
-//
-
-

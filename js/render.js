@@ -27,7 +27,12 @@ function renderEmoji() {
     for (i = 0; i < returnedData.length; i++) {
       var rendered = Mustache.render(bodyTemplate, returnedData[i]);
       var titleID = catList[i].replace(/\s+/g, "-").toLowerCase();
-      document.getElementById('target').innerHTML += "<h2 id=\"" + titleID + "\" class=\"my-4\">" + catList[i] + "</h2>";
+      if (i < 1) {
+        document.getElementById('target').innerHTML += "<h2 id=\"" + titleID + "\" class=\"my-1\">" + catList[i] + "</h2>";
+      }
+      else {
+        document.getElementById('target').innerHTML += "<hr class=\"cat-divider\" /><div class=\"cat-heading\"><h2 id=\"" + titleID + "\">" + catList[i] + "</h2></div>";
+      }
       document.getElementById('target').innerHTML += rendered;
     }
     // initialise list.js

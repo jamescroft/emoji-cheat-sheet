@@ -2,21 +2,23 @@
 
 body {
     position: relative;
-  }
+}
 
 /* navbar fixed-top scroll offset */
 
-  *[id]:before { 
-    display: block; 
-    content: " "; 
-    margin-top: -75px; 
-    height: 75px; 
-    visibility: hidden; 
-  }
+*[id]:before {
+    display: block;
+    content: " ";
+    margin-top: -75px;
+    height: 75px;
+    visibility: hidden;
+}
 
 /* Light mode */
 @media (prefers-color-scheme: light) {
-    nav, body {
+
+    nav,
+    body {
         background-color: white;
         color: black;
     }
@@ -24,14 +26,16 @@ body {
 
 /* Dark mode */
 @media (prefers-color-scheme: dark) {
-    nav, body {
+
+    nav,
+    body {
         background-color: black;
         color: white;
     }
 }
 
 .main {
-    padding-top:75px;
+    padding-top: 75px;
 }
 
 /*Navbar */
@@ -43,20 +47,21 @@ body {
 
 .navbar-emoji-picker li {
     display: inline-block;
-    padding-left:0rem!important;
-    padding-right:0rem!important;
+    padding-left: 0rem !important;
+    padding-right: 0rem !important;
 }
 
 
 .nav-link {
-    display: inline-block!important;
-    padding: 0.3rem 0.15rem!important;
+    display: inline-block !important;
+    padding: 0.3rem 0.15rem !important;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.5;
 }
 
-.nav-link.active, .nav-link.search-link {
+.nav-link.active,
+.nav-link.search-link {
     filter: none;
     -webkit-filter: none;
     opacity: 1;
@@ -76,36 +81,48 @@ body {
     padding: 0.2rem 1rem;
 }
 
-/*Greyscale Navbar Emoji */
+h1.mobile-brand {
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
 
-.grey {
-      font-size: 5em;
-  }
+hr.cat-divider {
+    margin-top: 2rem;
+}
+
+h2 {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    letter-spacing: 0.2rem;
+    color: #666;
+    margin-top: 2rem;
+}
 
 ul.emoji-list {
     text-align: center;
-    padding-left:0;
+    padding-left: 0;
 }
 
 li.emoji-item {
     list-style-type: none;
     display: inline-block;
     line-height: 100px;
-    vertical-align:top;
+    vertical-align: top;
 }
 
 .emoji-symbol {
- font-size: 3rem;
+    font-size: 3rem;
 }
+
 .emoji-description {
     line-height: 0.70rem;
-    font-size:0.76rem;
+    font-size: 0.76rem;
 }
 
 .emoji-tags {
-    display:none;
+    display: none;
 }
 
 .oi.oi-magnifying-glass {
-    top:4px;
+    top: 4px;
 }
