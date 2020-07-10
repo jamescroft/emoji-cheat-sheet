@@ -42,8 +42,8 @@ body {
 
 .navbar-emoji-picker li {
     display: inline-block;
-    padding-left:0.3rem!important;
-    padding-right:0.30rem!important;
+    padding-left:0.1rem!important;
+    padding-right:0.10rem!important;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.5;
