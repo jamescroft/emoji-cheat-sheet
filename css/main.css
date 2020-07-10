@@ -45,14 +45,21 @@ body {
     display: inline-block;
     padding-left:0rem!important;
     padding-right:0rem!important;
+}
+
+
+.nav-link {
+    display: inline-block!important;
+    padding: 0.3rem 0.15rem!important;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.5;
 }
 
-.nav-link {
-    display: inline-block!important;
-    padding: 0.3rem 0.15rem!important;
+.nav-link.active {
+    filter: none;
+    -webkit-filter: none;
+    opacity: 1;
 }
 
 .navbar-toggler {

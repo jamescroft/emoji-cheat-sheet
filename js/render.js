@@ -47,6 +47,5 @@ function renderEmoji() {
         $('.emoji-navlinks').toggleClass('show');
       }
     });
-
   });
 }
