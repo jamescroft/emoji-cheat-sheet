@@ -90,7 +90,6 @@ li.emoji-item {
     font-size:0.76rem;
 }
 
-.search-link {
-    position: relative;
+.oi.oi-magnifying-glass {
     top:4px;
 }
