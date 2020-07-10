@@ -49,6 +49,11 @@ body {
     opacity: 0.5;
 }
 
+.nav-link {
+    display: inline-block;
+    padding: 0.3rem 0;
+}
+
 .navbar-toggler {
     border: hidden;
     padding: 0;
