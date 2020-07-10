@@ -61,7 +61,8 @@ body {
 }
 
 .navbar-search {
-    display: inline-block;
+    display: block;
+    padding: 0.2rem 1rem;
 }
 
 /*Greyscale Navbar Emoji */
