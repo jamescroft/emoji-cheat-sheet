@@ -11,7 +11,10 @@
         integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 
     <!-- Open Iconic Bootstrap -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha512-UyNhw5RNpQaCai2EdC+Js0QL4RlVmiq41DkmCJsRV3ZxipG2L0HhTqIf/H9Hp8ez2EnFlkBnjRGJU2stW3Lj+w==" crossorigin="anonymous" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css"
+        integrity="sha512-UyNhw5RNpQaCai2EdC+Js0QL4RlVmiq41DkmCJsRV3ZxipG2L0HhTqIf/H9Hp8ez2EnFlkBnjRGJU2stW3Lj+w=="
+        crossorigin="anonymous" />
     <link rel="stylesheet" href="css/main.css">
     <title>Emoji cheat sheet</title>
 </head>
@@ -49,11 +52,15 @@
                     <li class="nav-item">
                         <a class="nav-link" href="#flags" title="Flags">🚩</a>
                     </li>
+                    <li class="nav-item">
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch"
+                            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                            <a class="nav-link d-sm-none search-link" href="#" title="Search"><span
+                                    class="oi oi-magnifying-glass"></span></a>
+                        </button>
+                    </li>
                 </ul>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch"
-                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                    <a class="nav-link d-sm-none search-link" href="#" title="Search"><span class="oi oi-magnifying-glass"></span></a>
-                </button>
+
             </div>
             <div class="collapse navbar-collapse" id="navbarSearch">
                 <ul class="navbar navbar-nav navbar-search ml-auto">
@@ -63,7 +70,8 @@
                                 <input id="search-field" class="form-control" type="search" placeholder="Search"
                                     aria-label="Search">
                                 <div class="input-group-append">
-                                    <span class="input-group-text"><a class="search-clear" href="#"><span class="oi oi-x"></a></span></span>
+                                    <span class="input-group-text"><a class="search-clear" href="#"><span
+                                                class="oi oi-x"></a></span></span>
                                 </div>
                             </div>
                         </form>

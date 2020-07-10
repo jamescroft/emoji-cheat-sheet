@@ -50,8 +50,8 @@ body {
 }
 
 .nav-link {
-    display: inline-block;
-    padding: 0.3rem 0;
+    display: inline-block!important;
+    padding: 0.3rem 0.2rem!important;
 }
 
 .navbar-toggler {
@@ -88,4 +88,9 @@ li.emoji-item {
 .emoji-description {
     line-height: 0.70rem;
     font-size:0.76rem;
+}
+
+.search-link {
+    position: relative;
+    top:4px;
 }
