@@ -75,12 +75,8 @@ body {
     opacity: 1;
 }
 
-.nav-last-item {
-    margin-right: 0.3rem;
-}
-
 .nav-search-link {
-    margin-left: 0.2rem;
+    margin-left: 0.4rem;
 }
 
 .search-clear {
