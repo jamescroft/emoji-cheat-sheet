@@ -92,7 +92,7 @@
     <script id="body-template" type="x-tmpl-mustache">
         {{#.}}
             <li class="col-4 col-md-2 col-lg-1 emoji-item">
-              <div class="emoji-symbol">{{emoji}}</div>
+              <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}">{{emoji}}</div>
               <div class="emoji-description"><small>{{description}}</small></div>
               <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
             </li>
@@ -112,6 +112,9 @@
         integrity="sha512-6AXIWogbKpsHvoZJrJtHpIYES4wP8czSj0zk7ZfwOYS8GWYFNSykwdfapt7yQc4ikZytemBu+QyVObzBHJMwYg=="
         crossorigin="anonymous">
     </script>
+
+    <!-- clipboard.js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
 
     <!-- List.js-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
