@@ -36,21 +36,36 @@ body {
 
 /*Navbar */
 
-.navbar-nav {
-    flex-direction: row!important;
+.navbar-emoji-picker {
+    flex-direction: row;
     flex-wrap: wrap;
 }
 
-.navbar-nav li {
+.navbar-emoji-picker li {
     display: inline-block;
     padding-left:0.30rem!important;
     padding-right:0.30rem!important;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.5;
 }
 
 .navbar-toggler {
     border: hidden;
     padding: 0;
 }
+
+.navbar-search {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+
+/*Greyscale Navbar Emoji */
+
+.grey {
+
+      font-size: 5em;
+  }
 
 ul.emoji-list {
     text-align: center;

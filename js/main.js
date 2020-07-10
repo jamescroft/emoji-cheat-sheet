@@ -1,11 +1,15 @@
 
 
 
-//Scrollspy
+//Hide navbar on search
+$('.navbar-toggler a.search-link').on('click', function () {
+    $('.emoji-navlinks').toggleClass('show')
+});
 
-$(document).ready(function () {
-    $(window).on('activate.bs.scrollspy', function (e) {
-        console.log("target: " + e.target);
-  console.log("currentTarget: " + e.currentTarget);
-    })
-})
+//
+$('a.search-clear').on('click', function () {
+    $('#search-field').val('');
+    $('#navbarSearch').toggleClass('show');
+    $('.emoji-navlinks').toggleClass('show');
+});
+

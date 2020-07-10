@@ -42,5 +42,12 @@ function renderEmoji() {
       var searchString = $(this).val();
       emojiList.search(searchString);
     });
+
+    $('#search-field').on('keypress',function(e) {
+      if(e.which == 13) {
+          $('#navbarSearch').toggleClass('show');
+          $('.emoji-navlinks').toggleClass('show');
+      }
+  });
   });
 }
