@@ -12,5 +12,6 @@ $('a.search-clear').on('click', function () {
     $('#search-field').val('');
     $('#navbarSearch').toggleClass('show');
     $('.emoji-navlinks').toggleClass('show');
+    $('#search-field').val();
 });
 

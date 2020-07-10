@@ -56,10 +56,14 @@ body {
     opacity: 0.5;
 }
 
-.nav-link.active {
+.nav-link.active, .nav-link.search-link {
     filter: none;
     -webkit-filter: none;
     opacity: 1;
+}
+
+.search-clear {
+    color: #666;
 }
 
 .navbar-toggler {
