@@ -41,13 +41,12 @@ function renderEmoji() {
     $('#search-field').on('keyup', function () {
       var searchString = $(this).val();
       emojiList.search(searchString);
+      if (e.which == 13) {
+        $('#navbarSearch').toggleClass('show');
+        $('.emoji-navlinks').toggleClass('show');
+        $('#search-field').focus()
+      }
     });
 
-    $('#search-field').on('keypress',function(e) {
-      if(e.which == 13) {
-          $('#navbarSearch').toggleClass('show');
-          $('.emoji-navlinks').toggleClass('show');
-      }
-  });
   });
 }
