@@ -62,7 +62,7 @@ body {
 
 .nav-link {
     display: inline-block !important;
-    padding: 0.3rem 0.15rem !important;
+    padding: 0.3rem 0.20rem !important;
     -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
     opacity: 0.5;
@@ -120,6 +120,7 @@ li.emoji-item {
     display: inline-block;
     line-height: 100px;
     vertical-align: top;
+    min-width:6em;
 }
 
 .emoji-symbol {
