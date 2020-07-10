@@ -38,6 +38,7 @@ body {
 
 .navbar-emoji-picker {
     display: inline-block;
+    padding: 0;
 }
 
 .navbar-emoji-picker li {
