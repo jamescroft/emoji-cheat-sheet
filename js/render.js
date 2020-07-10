@@ -63,5 +63,14 @@ function renderEmoji() {
   // initialise clipboard.js
   new ClipboardJS('.btn');
 
+  //initialise tooltips
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
+  $('.btn').on('click', function () {
+      $(this).attr("title", "Copied!").tooltip("_fixTitle").tooltip("show").attr("title", "Copy").tooltip("_fixTitle");
+});
+
   });
 }
