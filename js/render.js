@@ -46,5 +46,12 @@ function renderEmoji() {
         $('.emoji-navlinks').toggleClass('show');
       }
     });
+    // clear search field and empty filter
+    $('a.search-clear').on('click', function () {
+      $('#navbarSearch').toggleClass('show');
+      $('.emoji-navlinks').toggleClass('show');
+      $('#search-field').val("");
+      emojiList.search($('#search-field').val());
+    });
   });
 }
