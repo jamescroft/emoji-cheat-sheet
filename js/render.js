@@ -42,9 +42,9 @@ function renderEmoji() {
       var searchString = $(this).val();
       emojiList.search(searchString);
       if (e.which == 13) {
+        $('#search-field').focus();
         $('#navbarSearch').toggleClass('show');
         $('.emoji-navlinks').toggleClass('show');
-        $('#search-field').focus()
       }
     });
 
