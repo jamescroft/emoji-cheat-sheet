@@ -45,7 +45,7 @@
     <nav id="navbar" class="navbar navbar-expand-sm navbar-light bg-light fixed-top">
         <div class="container">
             <div class="emoji-navlinks navbar-collapse collapse show">
-                <a class="navbar-brand d-none d-sm-block" href="#">Emoji Cheat Sheet</a>
+                <a class="navbar-brand d-none d-md-block" href="#">Emoji Cheat Sheet</a>
                 <ul class="navbar navbar-nav navbar-emoji-picker mr-auto">
                     <li class="nav-item">
                         <a class="nav-link" href="#smileys-&-emotion" title="Smileys & Emotion">😀</a>
@@ -77,7 +77,7 @@
                     <li class="nav-item nav-search-link">
                         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSearch"
                             aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                            <a class="nav-link d-sm-none search-link" href="#" title="Search" for="search-field"><span
+                            <a class="nav-link d-lg-none search-link" href="#" title="Search" for="search-field"><span
                                     class="oi oi-magnifying-glass"></span></a>
                         </button>
                     </li>
@@ -109,12 +109,13 @@
         <div class="row">
             <ul id="target" class="emoji-list list"></ul>
         </div>
-        <div class="text-center"><a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">Full list of emoji v13.0</a></div>
+        <div class="text-center"><a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">Full
+                list of emoji v13.0</a></div>
     </div>
 
     <script id="body-template" type="x-tmpl-mustache">
         {{#.}}
-            <li class="col-4 col-md-2 col-lg-1 emoji-item">
+            <li class="col-4 col-md-2 col-lg-1 emoji-item" data-unicode-version={{unicode_version}}>
               <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip" data-placement="top" title="Copy">{{emoji}}</div>
               <div class="emoji-description"><small>{{description}}</small></div>
               <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
@@ -142,8 +143,10 @@
     <!-- List.js-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
+    <!-- Require.js-->
+    <script data-main="js/main" src="js/require.js"></script>
+
     <!-- Cheat Sheet-->
-    <script src="js/main.js"></script>
     <script src="js/render.js"></script>
 
 </body>
