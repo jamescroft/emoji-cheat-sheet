@@ -1,3 +1,4 @@
+
 // render.js
 function renderEmoji() {
   $.getJSON("data/emoji-v13.json", function (json) {
@@ -59,18 +60,17 @@ function renderEmoji() {
       $('#search-field').val("");
       emojiList.search($('#search-field').val());
     });
-  
-  // initialise clipboard.js
-  new ClipboardJS('.btn');
 
-  //initialise tooltips
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  })
+    // initialise clipboard.js
+    new ClipboardJS('.btn');
 
-  $('.btn').on('click', function () {
+    //initialise tooltips
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+
+    $('.btn').on('click', function () {
       $(this).attr("title", "Copied!").tooltip("_fixTitle").tooltip("show").attr("title", "Copy").tooltip("_fixTitle");
-});
-
+    });
   });
 }

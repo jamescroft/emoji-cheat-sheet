@@ -109,18 +109,20 @@
         <div class="row">
             <ul id="target" class="emoji-list list"></ul>
         </div>
+
         <div class="text-center"><a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">Full
                 list of emoji v13.0</a></div>
     </div>
 
     <script id="body-template" type="x-tmpl-mustache">
         {{#.}}
-            <li class="col-4 col-md-2 col-lg-1 emoji-item" data-unicode-version={{unicode_version}}>
+            <li class="col-4 col-md-2 emoji-item">
               <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip" data-placement="top" title="Copy">{{emoji}}</div>
               <div class="emoji-description"><small>{{description}}</small></div>
               <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
             </li>
         {{/.}}
+        <div id="render-complete"></div>
     </script>
 
     <!-- jQuery, Popper.js, bootstrap.js -->
@@ -143,11 +145,12 @@
     <!-- List.js-->
     <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
 
-    <!-- Require.js-->
-    <script data-main="js/main" src="js/require.js"></script>
-
     <!-- Cheat Sheet-->
     <script src="js/render.js"></script>
+
+    <!--emoji.test.js
+    <script type="module" src="js/emoji-test.js"></script>
+    -->
 
 </body>
 
