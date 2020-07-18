@@ -76,7 +76,11 @@ body {
     opacity: 1;
 }
 
-.btn {
+.alert-dismissible .close {
+    padding: 0.5rem 1.25rem;
+}
+
+#target li .btn {
     padding: 0;
 }
 

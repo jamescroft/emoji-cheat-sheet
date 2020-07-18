@@ -38,7 +38,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
     <link rel="manifest" href="favicon/site.webmanifest">
 
-    <title>Emoji cheat sheet</title>
+    <title>Emoji Cheat Sheet</title>
 </head>
 
 <body onload="renderEmoji()" data-spy="scroll" data-target="#navbar" data-offset="50">
@@ -104,15 +104,36 @@
     </nav>
 
     <div id="emoji" class="container main my-3" data-spy="scroll" data-target="#navbar" data-offset="50">
+        <div class="alert alert-info alert-dismissible small fade show text-center" role="alert">
+            This cheat sheet shows <a class="alert-link" href="https://unicode.org/emoji/charts/full-emoji-list.html"
+                target="_blank">all v13.0 emojis</a>. Some may not be supported on your device. <a href="#learn-more"
+                class="alert-link">Learn more</a>
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
         <h1 class="d-block d-sm-none text-center mobile-brand">Emoji Cheat Sheet</h1>
         <hr />
         <div class="row">
             <ul id="target" class="emoji-list list"></ul>
         </div>
-
-        <div class="text-center"><a href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">Full
-                list of emoji v13.0</a></div>
+        <hr />
+        <div class="row">
+            <h2 id="learn-more">Learn more</h2>
+            <p><strong>A note from the author:</strong> Hi! I made this cheat sheet as an easy way for people on devices who don't have emoji keyboards to be able to quickly grab an emoji, then paste it wherever they need to use it!</p> 
+            <p>Not all emoji are supported on all devices, so if you see one above that doesn't look right, your device may not support it. For a full list of all emoji and their compatibility across devices, check the <a href="https://unicode.org/emoji/charts/full-emoji-list.html"
+                    target="_blank">full
+                    list of emoji v13.0</a> on the Unicode Consortium website.</p>
+                    <p>My name is <a href="https://twitter.com/jamescroft" target="_blank">James Croft</a>, and I'm a web developer from Brisbane, Australia.</p>
+        </div>
     </div>
+    <hr />
+    <footer class="footer mt-auto py-3">
+        <div class="container">
+            <span class="text-muted">Emoji Cheat Sheet. Last updated: July 2020.</span>
+        </div>
+    </footer>
+
 
     <script id="body-template" type="x-tmpl-mustache">
         {{#.}}
