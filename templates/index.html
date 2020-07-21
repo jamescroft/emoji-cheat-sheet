@@ -21,6 +21,7 @@
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-46528775-5"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
+
         function gtag() {
             dataLayer.push(arguments);
         }
@@ -113,9 +114,9 @@
         </div>
         <h1 class="d-block d-sm-none text-center mobile-brand">Emoji Cheat Sheet</h1>
         <hr />
-        <div class="row">
-            <ul id="target" class="emoji-list list">
-                <h2 id="smileys-&-emotion" class="my-1"> Smileys & Emotion </h2>
+        <div id="smileys-&-emotion" class="row">
+            <h2 class="my-3"> Smileys & Emotion </h2>
+            <ul class="emoji-list list">
                 {{#emojis-smileys-emotion}}
                 <li class="col-4 col-md-2 emoji-item">
                     <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip"
@@ -124,8 +125,12 @@
                     <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
                 </li>
                 {{/emojis-smileys-emotion}}
-                <hr class="cat-divider" />
-                <h2 id="people-&-body" class="my-1"> People & Body </h2>
+            </ul>
+        </div>
+        <hr class="cat-divider" />
+        <div id="people-&-body" class="row">
+            <h2 class="my-3"> People & Body </h2>
+            <ul class="emoji-list list">
                 {{#emojis-people-body}}
                 <li class="col-4 col-md-2 emoji-item">
                     <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip"
@@ -134,8 +139,12 @@
                     <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
                 </li>
                 {{/emojis-people-body}}
-                <hr class="cat-divider" />
-                <h2 id="animals-&-nature" class="my-1"> Animals & Nature </h2>
+            </ul>
+        </div>
+        <hr class="cat-divider" />
+        <div id="animals-&-nature" class="row">
+            <h2 class="my-3"> Animals & Nature </h2>
+            <ul class="emoji-list list">
                 {{#emojis-animals-nature}}
                 <li class="col-4 col-md-2 emoji-item">
                     <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip"
@@ -144,8 +153,12 @@
                     <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
                 </li>
                 {{/emojis-animals-nature}}
-                <hr class="cat-divider" />
-                <h2 id="food-&-drink" class="my-1"> Food & Drink </h2>
+            </ul>
+        </div>
+        <hr class="cat-divider" />
+        <div id="food-&-drink" class="row">
+            <h2 class="my-3"> Food & Drink </h2>
+            <ul class="emoji-list list">
                 {{#emojis-food-drink}}
                 <li class="col-4 col-md-2 emoji-item">
                     <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip"
@@ -154,8 +167,12 @@
                     <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
                 </li>
                 {{/emojis-food-drink}}
-                <hr class="cat-divider" />
-                <h2 id="travel-&-places" class="my-1"> Travel & Places </h2>
+            </ul>
+        </div>
+        <hr class="cat-divider" />
+        <div id="travel-&-places" class="row">
+            <h2 class="my-3"> Travel & Places </h2>
+            <ul class="emoji-list list">
                 {{#emojis-travel-places}}
                 <li class="col-4 col-md-2 emoji-item">
                     <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip"
@@ -164,8 +181,12 @@
                     <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
                 </li>
                 {{/emojis-travel-places}}
-                <hr class="cat-divider" />
-                <h2 id="activities" class="my-1"> Activities </h2>
+            </ul>
+        </div>
+        <hr class="cat-divider" />
+        <div id="activities" class="row">
+            <h2 class="my-3"> Activities </h2>
+            <ul class="emoji-list list">
                 {{#emojis-activities}}
                 <li class="col-4 col-md-2 emoji-item">
                     <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip"
@@ -174,8 +195,12 @@
                     <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
                 </li>
                 {{/emojis-activities}}
-                <hr class="cat-divider" />
-                <h2 id="objects" class="my-1"> Objects </h2>
+            </ul>
+        </div>
+        <hr class="cat-divider" />
+        <div id="objects" class="row">
+            <h2 class="my-3"> Objects </h2>
+            <ul class="emoji-list list">
                 {{#emojis-objects}}
                 <li class="col-4 col-md-2 emoji-item">
                     <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip"
@@ -184,8 +209,12 @@
                     <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
                 </li>
                 {{/emojis-objects}}
-                <hr class="cat-divider" />
-                <h2 id="symbols" class="my-1"> Symbols </h2>
+            </ul>
+        </div>
+        <hr class="cat-divider" />
+        <div id="symbols" class="row">
+            <h2 class="my-3"> Symbols </h2>
+            <ul class="emoji-list list">
                 {{#emojis-symbols}}
                 <li class="col-4 col-md-2 emoji-item">
                     <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip"
@@ -194,8 +223,12 @@
                     <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
                 </li>
                 {{/emojis-symbols}}
-                <hr class="cat-divider" />
-                <h2 id="flags" class="my-1"> Flags </h2>
+            </ul>
+        </div>
+        <hr class="cat-divider" />
+        <div id="flags" class="row">
+            <h2 class="my-3"> Flags </h2>
+            <ul class="emoji-list list">
                 {{#emojis-flags}}
                 <li class="col-4 col-md-2 emoji-item">
                     <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip"
@@ -204,22 +237,29 @@
                     <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
                 </li>
                 {{/emojis-flags}}
-
-
             </ul>
         </div>
-        <hr />
+        <hr class="cat-divider" />
+        <div id="learn-more" class="row">
+            <h2>Learn more</h2>
+            <p><strong>A note from the author:</strong> Hi! I made this cheat sheet as an easy way for people on devices
+                who
+                don't have emoji keyboards to be able to quickly grab an emoji, then paste it wherever they need to use
+                it!
+            </p>
+            <p>Not all emoji are supported on all devices, so if you see one above that doesn't look right, your device
+                may
+                not support it yet. For a full list of all emoji and their compatibility across devices, check the <a
+                    href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">full list of emoji
+                    v13.0</a> on the Unicode Consortium website.</p>
+            <p>My name is <a href="https://twitter.com/jamescroft" target="_blank">James Croft</a>, and I'm a web
+                developer
+                from Brisbane, Australia.</p>
+        </div>
+    </div>
+    <hr />
 
-        <h2 id="learn-more">Learn more</h2>
-        <p><strong>A note from the author:</strong> Hi! I made this cheat sheet as an easy way for people on devices who
-            don't have emoji keyboards to be able to quickly grab an emoji, then paste it wherever they need to use it!
-        </p>
-        <p>Not all emoji are supported on all devices, so if you see one above that doesn't look right, your device may
-            not support it yet. For a full list of all emoji and their compatibility across devices, check the <a
-                href="https://unicode.org/emoji/charts/full-emoji-list.html" target="_blank">full list of emoji
-                v13.0</a> on the Unicode Consortium website.</p>
-        <p>My name is <a href="https://twitter.com/jamescroft" target="_blank">James Croft</a>, and I'm a web developer
-            from Brisbane, Australia.</p>
+
     </div>
     <hr />
     <footer class="footer mt-auto py-3">
