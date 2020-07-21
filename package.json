@@ -1,0 +1,28 @@
+{
+  "name": "emoji-cheat-sheet",
+  "version": "1.0.0",
+  "description": "Package files for deploying the emoji cheat sheet.",
+  "main": "index.js",
+  "dependencies": {
+    "emoji-unicode-version": "^0.3.0",
+    "if-emoji": "^0.1.0",
+    "mustache": "^4.0.1"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-mustache": "^5.0.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jamescroft/emoji-cheat-sheet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jamescroft/emoji-cheat-sheet/issues"
+  },
+  "homepage": "https://github.com/jamescroft/emoji-cheat-sheet#readme"
+}
