@@ -1,4 +1,4 @@
-var emojiJson = require('./data/sample-emoji-v13.json'); //with path
+var emojiJson = require('./data/emoji-v13.json'); //with path
 var gulp = require('gulp');
 var mustache = require('gulp-mustache');
 var rename = require("gulp-rename");

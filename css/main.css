@@ -80,7 +80,7 @@ body {
     padding: 0.5rem 1.25rem;
 }
 
-.emoji-list li .btn {
+.emoji-list li .emoji-symbol {
     padding: 0;
 }
 
@@ -152,4 +152,14 @@ ul.emoji-list li {
 
 .footer {
     margin-bottom: 60px;
+}
+
+/* Single page */
+
+.single .single-emoji {
+    font-size: 8rem;
+}
+
+.single .single-description {
+    font-size: 3rem;
 }

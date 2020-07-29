@@ -2,12 +2,13 @@
 $(document).ready(function () {
 
   //create a link on description
-  $('.emoji-description a').html(function() {
+  $('.emoji-description a').each(function()
+  { 
     var emojiLink = $(this).text().replace(/\s+/g, "-").toLowerCase();
-    return "<a href=\"emoji/" + emojiLink + ".html\">this is a link</a>"
+    console.log(emojiLink)
+    $(this).attr("href", "emoji/" + emojiLink + ".html");
   }
    );
-   
 
   //Hide navbar on search
   $('.navbar-toggler a.search-link').on('click', function () {
