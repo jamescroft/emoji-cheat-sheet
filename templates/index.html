@@ -129,16 +129,16 @@
         </div>
         <hr class="cat-divider" />
         <div id="people-&-body" class="row">
-            <h2 class="my-3"> People & Body </h2>
+            <h2 class="my-3"> People & Body </h2>  
             <ul class="emoji-list list">
                 {{#emojis-people-body}}
                 <li class="col-4 col-md-2 emoji-item">
                     <div class="emoji-symbol btn" data-clipboard-text="{{emoji}}" data-toggle="tooltip"
                         data-placement="top" title="Copy">{{emoji}}</div>
-                    <div class="emoji-description"><small>{{description}}</small></div>
+                    <div class="emoji-description"><a href="#"><small>{{description}}</small></a></div>
                     <div class="emoji-tags">{{#tags}}{{.}} {{/tags}}</div>
                 </li>
-                {{/emojis-people-body}}
+                {{/emojis-people-body}} 
             </ul>
         </div>
         <hr class="cat-divider" />

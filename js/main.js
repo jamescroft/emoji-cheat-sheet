@@ -1,9 +1,17 @@
 
 $(document).ready(function () {
 
+  //create a link on description
+  $('.emoji-description a').html(function() {
+    var emojiLink = $(this).text().replace(/\s+/g, "-").toLowerCase();
+    return "<a href=\"emoji/" + emojiLink + ".html\">this is a link</a>"
+  }
+   );
+   
+
   //Hide navbar on search
   $('.navbar-toggler a.search-link').on('click', function () {
-    $('.emoji-navlinks').toggleClass('show')
+    $('.emoji-navlinks').toggleClass('show') 
     $('#search-field').focus()
   });
 
